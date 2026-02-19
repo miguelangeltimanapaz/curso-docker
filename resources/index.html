@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Curso de Docker</title>
+  <style>
+    :root{
+      --bg: #f4f8fc;
+      --card: #ffffff;
+      --border: #e3eaf2;
+      --text: #1f2d3d;
+      --muted: #5f6f81;
+      --primary: #2496ED; /* azul Docker */
+      --primary-soft: #e6f3fc;
+      --shadow: 0 15px 40px rgba(36,150,237,.08);
+      --radius: 16px;
+    }
+
+    *{ box-sizing: border-box; }
+
+    body{
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    .wrap{
+      width: min(900px, 92vw);
+      padding: 30px 20px;
+    }
+
+    .card{
+      background: var(--card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: clamp(28px, 4vw, 50px);
+    }
+
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: var(--primary-soft);
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .dot{
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    h1{
+      margin: 20px 0 10px;
+      font-size: clamp(28px, 4.5vw, 46px);
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+    }
+
+    .subtitle{
+      margin: 0;
+      font-size: 17px;
+      color: var(--muted);
+      max-width: 60ch;
+    }
+
+    .cta{
+      margin-top: 24px;
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 10px;
+      background: var(--primary);
+      color: #ffffff;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background .2s ease, transform .1s ease;
+    }
+
+    .cta:hover{
+      background: #1f86d6;
+      transform: translateY(-2px);
+    }
+
+    .footer{
+      margin-top: 25px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .pill{
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #f1f6fb;
+      border: 1px solid var(--border);
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="badge">
+        <span class="dot"></span>
+        Curso de Docker
+      </div>
+
+      <h1>Bienvenidos al curso de docker</h1>
+
+      <p class="subtitle">
+        Aprende a crear, administrar y desplegar aplicaciones en contenedores
+        utilizando Docker de forma profesional y estructurada.
+      </p>
+
+      <a href="#" class="cta">Comenzar</a>
+
+      <div class="footer">
+        <span class="pill">Modalidad práctica</span>
+        <span class="pill">Nivel inicial - intermedio</span>
+        <span class="pill">Tecnología Docker</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
