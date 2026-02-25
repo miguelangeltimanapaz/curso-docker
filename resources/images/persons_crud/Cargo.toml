@@ -1,0 +1,13 @@
+[package]
+name = "persons_crud"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.37", features = ["full"] }
+axum = "0.7"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.7.4", features = ["runtime-tokio", "sqlite", "macros"] }
+tower-http = { version = "0.5", features = ["cors"] }
+anyhow = "1.0"
